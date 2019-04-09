@@ -13,20 +13,14 @@ public class largeAmongThreee {
 		this.b=b;
 		this.c=c;
 	}
-	public void  isLarge(int a,int b,int c)
-	{
-		if (a>b && a>c) 
-		{		       
-			 System.out.println(a+":Is Greater");
-		}
-		else if  (b>a && b>c)
+		public static int max3(int a, int b, int c)
 		{
-			 System.out.println(b+":Is Greater");
-		}
-		else {
-			System.out.println(c+":Is Greater");
-		}
-	}
+			   int max = a;
+			   if (b > max) {max = b;}
+			   if (c > max) {max = c;}
+			   return max;
+			}
+		
       public static void main(String[] args) {
     	  Scanner s= new Scanner(System.in);
     	  int a,b,c; 
@@ -40,7 +34,7 @@ public class largeAmongThreee {
   			b=s.nextInt();
   			c=s.nextInt();
   			l[i].setData(a,b,c);
-  			l[i].isLarge(a, b, c);
+  			System.out.println("Maximun is:"+(max3(a, b, c)));
   		}
 	}
 }

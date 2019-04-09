@@ -56,7 +56,7 @@ public class Student
 		for(int i=0;i<array.length;i++)
 		{
 			System.out.println("Enter the Name and Percentage");
-			String name = s.nextLine(); 
+			String name = s.next(); 
 			float perc= s.nextFloat();
 			array[i]=new Student();
 			array[i].setData(name,perc);
